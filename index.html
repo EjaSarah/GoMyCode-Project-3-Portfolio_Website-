@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sarah's Portfolio</title> 
+    <!-- This is animate link for H1 tag -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <!-- This is how to link fonts using a cdn -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+   href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,500&display=swap" 
+  rel="stylesheet">
+    <!-- This is  css style sheets -->
+    <link rel="stylesheet" href="assets/css/styles.css"/>
+        <!-- This is the favicon which will didplay on the url of this page-->
+    <link rel="icon" href="assets/images/favicon/sarai-favicon.ico" />
+</head>
+  <body>
+    <!-- This is container which houses everything on this page..max auto centers the container..px-4 adds horizontal padding-->
+    <div class="container">
+      <!-- Header begins here -->
+      <header class="navbar">
+          <div class="nav-logo animate__animated animate__flipInY">
+            <!-- This is the navbar brand logo image-->
+            <img
+              class="logo"
+              src="assets/images/logo/sarah-logo.jpg"
+              alt="logo"
+            />
+            <p>EjaSarah<span class="span-p">~</span>Designs</p>
+          </div>
+          <!-- This div houses the nav-links -->
+              <nav class="nav-links">
+              <ul>
+                <li>
+                  <a href="#Home">Home</a>
+                </li>
+                <li>
+                  <a href="#About">About</a>
+                </li>
+                <li>
+                  <a href="#Category">Category</a>
+                </li>
+                <li>
+                  <a href="#Skills">Skills</a>
+                </li>
+                <li>
+                  <a href="#project">Project</a>
+                </li>
+                <li>
+                  <a href="#Resume">Resume</a>
+                </li>
+                <li>
+                  <a href="#Connect">Connect</a>
+                </li>
+                <li>
+                  <a href="#message">Message</a>
+                </li>
+              </ul>
+            </nav>
+      </header>
+      
+       <!-- this about section /main of this page -->
+      <main id="About">
+        <div id="about-video-background">
+          <div class="about-overlay">
+          <video autoplay loop muted>
+            <source src="/assets/video/food.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+  <div class="about-content">
+    <div>
+      <img class="about-image animate__animated animate__flipInY" src="assets/images/myself/saria.jpg" alt="A portrait of Sarah" />
+      </div>
+    <div class="animate__animated animate__bounce">
+      <h1>
+        Hi, I'm Sarah Eja Ogbonna, <br/>
+        <span> a full stack developer.</span> Welcome to my world!.
+      </h1>
+    </div>
+  <div class="about-text">
+    <p>Thank you for stopping by on my page.</p>
+      <p>
+        I'm a passionate web developer that is fasinated about using my
+        skills to solve some of the world's problems.
+      </p>
+      <a href="project.html" target="_blank">My Work</a>
+      </div>
+    </div>
+    </div>
+  </div>
+  </main>
+  
+
+  <!-- Category section of this website -->
+  <section id="category">
+    <p>Category</p>
+    <a href="#" class="category-box">
+        <div class="dark-overlay"></div>
+        <h2>Full stack Developer</h2>
+    </a>
+    <a href="#"  class="category-box">
+        <div class="dark-overlay"></div>
+        <h2>Screen Writing</h2>
+    </a>
+    <a href="#" class="category-box">
+        <div class="dark-overlay"></div>
+        <h2>Blog Post Writing</h2>
+    </a>
+    <a href="#" class="category-box">
+        <div class="dark-overlay"></div>
+        <h2>Content Production</h2>
+    </a>
+ </section>
+
+
+ <!-- This skills section -->
+ <section id="Skills">
+  <div class="skills-flex">
+    <div class="skills-text">
+      <h3>fun facts about me.</h3>
+      <p>I'm an easy going person who loves people genuienly.
+          I hate when others gang hate on an innocent person because of what their friends say about this person.
+      </p>
+      <a href="about.html">MORE</a>
+  </div>
+  <div class="icon-div">
+    <div><ion-icon name="logo-html5"></ion-icon></div>
+    <div><ion-icon name="logo-javascript"></ion-icon></div>
+    <div><ion-icon name="logo-nodejs"></ion-icon></div>
+    <div><ion-icon name="logo-react"></ion-icon></div>
+  </div>
+  <div class="skills1">
+    <p>HTML & CSS</p>
+      <div class="skill-bar">
+          <div class="skill-fill htmlcss"></div>
+      </div>
+      <p>Javascript</p>
+      <div class="skill-bar">
+          <div class="skill-fill jv"></div>
+      </div>
+      <p>Node.js</p>
+      <div class="skill-bar">
+          <div class="skill-fill node.js"></div>
+      </div>
+      <p>React</p>
+      <div class="skill-bar">
+          <div class="skill-fill react"></div>
+      </div>
+  </div>
+  <div class="icon-div2">
+    <div><ion-icon name="logo-css3"></ion-icon></div>
+    <div><ion-icon name="logo-css3"></ion-icon></div>
+    <div><ion-icon name="logo-nodejs"></ion-icon></div>
+    <div><ion-icon name="logo-css3"></ion-icon></div>
+  </div>
+  <div class="skills2">
+      <p>Tailwind</p>
+      <div class="skill-bar">
+          <div class="skill-fill tailwind"></div>
+      </div>
+      <p>Bootstrap</p>
+      <div class="skill-bar">
+          <div class="skill-fill bootstrap"></div>
+      </div>
+      <p>Mysql</p>
+      <div class="skill-bar">
+          <div class="skill-fill mysql"></div>
+      </div>
+      <p>NoSql</p>
+      <div class="skill-bar">
+          <div class="skill-fill nosql"></div>
+      </div>
+  </div>
+</div>
+</section>
+
+
+
+  <!-- Project section of this website -->
+  <section id="category">
+    <p>Project</p>
+    <a href="#" class="project-box">
+        <div class="dark-overlay"></div>
+       <a href="#">Party Cake</a>
+    </a>
+    <a href="#"  class="project-box">
+        <div class="dark-overlay"></div>
+<a href="$">Gift App</a>
+    </a>
+    <a href="#" class="project-box">
+        <div class="dark-overlay"></div>
+        <a href="#">School_ville </a>
+    </a>
+    <a href="#" class="project-box">
+        <div class="dark-overlay"></div>
+        <a href="#">Sermons</a>
+    </a>
+ </section>
+
+
+  <!-- This is resume section-->
+  <section id="Resume">
+    <div>
+      <button  class="resume" type="button">
+        <a href="assets/sarah's_cv (1).pdf"></a>
+      Download Resume.
+      </button>
+    </div>
+  </div>
+</section>
+          
+   <!-- This is contact me section -->
+   <section id="Connect">
+    <div>
+      <div class="connect">
+        <a
+          href="https://www.instagram.com/eja_sarah1?igsh=MTdhY2RsdDdieGYxdg"
+          target="_blank">
+        <div><ion-icon name="logo-instagram"></ion-icon></div>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/sarah-eja-ogbonna123456/"
+          target="blank">
+        <div><ion-icon name="logo-linkedin"></ion-icon></div>
+        </a>
+        <a href="https://github.com/EjaSarah" target="_blank">
+          <div><ion-icon name="logo-github"></ion-icon></div>
+          </a>
+        
+      <a href="mailto:examplemail@gmail.com" target="_blank">
+        <div><ion-icon name="chatbox-ellipses-outline"></ion-icon></div>
+    </a>
+      </div>
+    </div>
+
+    
+  </section>
+  <!-- This is message me section -->
+  <section id="message">
+    <div  class="message-me">
+      <h5>Would you like us to work together?.</h5>
+      <p>Please kindly leave me a message</p>
+      <form action="">
+        <div class="form-group">
+          <label for="fullname">Full Name</label>
+          <input type="text" name="fullName" placeholder="Damian Sanders" />
+        </div>
+        <div class="form-group">
+          <label for="phoneNumber">Phone number</label>
+          <input
+            type="number"
+            name="phoneNumber"
+            placeholder="0704983722"
+          />
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            placeholder="DamianSanders@gmail.com"
+          />
+        </div>
+        <div class="form-group">
+          <label for="message-Us">Message Us</label>
+          <textarea name="message" id="" cols="30" rows="10"></textarea>
+        </div>
+        <input class="button" type="submit" value="submit" name="submit" />
+      </form>
+    </div>
+  </section>
+ 
+
+      <!-- This footer section -->
+  <section id="footer">
+    <footer class="footer" >
+      <nav>
+        <div class="nav-links">
+        <ul>
+          <li>
+            <a href="#Home">Home</a>
+          </li>
+          <li>
+            <a href="#About">About</a>
+          </li>
+          <li>
+            <li>
+              <a href="#Category">Category</a>
+            </li>
+            <a href="#Skills">Skills</a>
+          </li>
+          <li>
+            <a href="#project">Project</a>
+          </li>
+          <li>
+            <a href="#Resume">Resume</a>
+          </li>
+          <li>
+            <a href="#Connect">Connect</a>
+          </li>
+          <li>
+            <a href="#message">Message</a>
+          </li>
+        </ul>
+    </div>
+    <p>Copyright &2024; Ejasarah Designs. All rights Reserved.</p>
+  </nav>
+</footer>
+  </section>
+
+
+  <!-- This is the script for ionicons -->
+  <script
+  type="module"
+  src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+></script>
+<script
+  nomodule
+  src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+></script>
+      <!-- This is where container ends -->
+    </div>
+  </body>
+</head>
+
+  
+  
+  
+

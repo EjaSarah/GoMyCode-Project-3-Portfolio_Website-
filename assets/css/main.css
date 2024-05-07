@@ -1,0 +1,411 @@
+/*in css order matters
+root is the html tag in our page that all our content is wrapped around in*/
+
+/*validate your website on validator.w3.org
+..you can only validate markup language which is html
+you can do so by posting your website url if online already
+or by posting html file link or by pasting the entire raw html */
+
+/*on rem and resizing your boxes
+after building your website..go to setting and increase fonts
+for some users might increase their fonts so they can see properly
+if anything goes out of the box or seem wired..you might need to upscale your div
+using rem so evertything fits properly*/
+
+
+:root{
+    --site-color-01: #c13584;
+    --site-color-01-hover: #700240;
+    /* two dashes is used to refere 
+    to custom property or variable in css is used to declare a variable in css*/
+}
+
+
+html{
+    font-size: 62.5%;
+}
+
+
+body{
+    background-color: #1d1d1d;
+}
+
+/* fonts{
+    font-family: Rubic;
+    src: url(../fonts/RubikBurned-Regular.ttf);
+} */
+body:after{
+    position: absolute;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    z-index: -1;
+    content: url(../img/social1.jpg) url(../img/social2.jpg);
+
+}
+
+
+.wrapper-main{
+   width: 1100px;
+   margin: 0 auto;/*this centers a container*/
+}
+
+h1{
+    font-size: 2.6rem;
+    line-height: 1.5; /*for line height dont use pixel because it is a fixed amount
+    ..use a unitless amount
+    if using between 24px and 32px then 1.5..
+    this gives a one and half line height*/
+    color: #fff;
+    font-family: Roboto;
+    font-weight: 600;
+    text-transform: uppercase; 
+}
+
+h2{
+    font-size: 2.8rem;
+    line-height: 1.5;
+    color: #fff;
+    font-family: Roboto;
+    font-weight: 600;
+    text-transform: uppercase; 
+}
+
+h3{
+    font-size: 2.6rem;
+    line-height: 1.5;
+    color: #fff;
+    font-family: Roboto;
+    font-weight: 600;
+    text-transform: uppercase; 
+}
+
+p{
+    font-size: 1.4rem;
+    line-height: 1.75;
+    color: #fff;
+    font-family: Roboto; 
+}
+
+a{
+    font-size: 1.4rem;
+    line-height: 1.75;
+    color: #fff;
+    font-family: Roboto; 
+    cursor: pointer;
+}
+
+.header-main{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #fff;
+    /*whenever you need to use the variable you created reference to it with var an write it in the 
+    bracket*/
+    display: flex;
+    justify-content: space-between;
+    z-index: 1000; /*to ensure that it is always at the top*/
+}
+
+.header-main-logo{
+    width: fit-content;
+    height: 100%;
+    padding-left: 60px;
+    display: flex;
+}
+
+.header-main-logo img{
+    height: 40px;
+    align-self: center;
+    
+}
+
+.header-main-nav{
+    width: fit-content;
+    height: 100%;
+}
+
+.header-main-nav ul{
+    list-style: none;
+    margin-left: 30px;
+
+}
+
+.header-main-nav ul li{
+    display: inline;
+    float: left;
+
+}
+
+
+.header-main-nav ul li a{
+    padding:0 10px ;
+    font-family: 'Roboto', sans-serif;
+    line-height: 60px;
+    color: black;
+    display: block;
+    height: 100%;
+}
+
+.header-main-nav ul li a:hover{
+    color: greenyellow;  
+}
+
+.header-main-sm{
+    width: fit-content;
+    height: 100%;
+    padding-right: 60px;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.header-main-sm-fb{
+    width: 20px;
+    height: 20px;
+    background-image: url(../img/sarah4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header-main-sm-fb:hover{
+    background-image: url(../img/Dav1.jpg);
+    
+}
+
+
+
+.header-main-sm-ins{
+    width: 20px;
+    height: 20px;
+    background-image: url(../img/social1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.header-main-sm-ins:hover{
+    background-image: url(../img/social2.jpg);
+    
+}   
+
+/* This is our footer styling */
+
+.footer-main{
+    width: 100%; /*entire width of the browser*/
+    padding: 60px 0 100px;
+    background-color: #141414 ;
+}
+
+
+.footer-main-flex{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.footer-testimonials{
+    flex-basis:  20%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.footer-testimonials img{
+    width: 50%;
+    border-radius: 100px;  
+}
+
+.footer-testimonials p{
+    text-align: center;
+    font-size: 1.6rem;
+    padding: 20px 20px 0;
+}
+
+.footer-getintouch{
+    padding: 10px 20px;
+    margin:  40px 0 60px;
+    border: 2px solid #fff;
+    font-weight: 600;
+    transition: all ease-in-out 200ms;
+}
+
+.footer-getintouch:hover{
+    border: 2px solid var(--site-color-01)
+}
+
+.footer-sitemap{
+    flex-basis: 100%;
+    display: flex;
+}
+
+.footer-sitemap a{
+    line-height: 30px;
+}
+
+.footer-sitemap a:hover{
+    opacity: 0.8;
+}
+
+.footer-sitemap ul:nth-child(1){
+    border-left: 4px solid var(--site-color-01);
+    padding-left: 20px;
+}
+
+.footer-sitemap ul:nth-child(1), 
+.footer-sitemap ul:nth-child(2){
+    flex-basis: 180px;
+}
+
+
+.footer-sitemap ul:nth-child(3){
+    flex-basis: 340px;
+}
+
+.footer-sitemap p{
+    text-transform: uppercase;
+}
+
+.footer-sitemap ul:nth-child(4){
+    flex-grow: 1;
+}
+
+.footer-sitemap ul:nth-child(4) {
+    text-align: center;
+}
+
+/* BURGER MENU */
+
+.burger-menu, 
+.burger-menu-btn{
+    display: none;
+}
+
+/* MOBILE VERSION */
+@media only screen and (max-width: 600px) {
+   
+   .burger-menu-btn{
+        display: block;
+        margin-left: 10px;
+        width: 50px;
+        height: 50px;
+        background-image: url(../img/sarah4.jpg), url(../img/sarah5.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center, center left 50px;
+    }
+
+    .burger-menu{
+      display: none;
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      z-index: 900;
+      background-color: #111;  
+    }
+
+    .burger-menu ul{
+         width: 100%;
+         height: calc(100vh - 60px);    
+         display: flex;
+         flex-wrap: wrap;
+         align-content: flex-start;
+      }
+
+      .burger-menu ul li{
+        flex-basis: 100%;
+        border-top: 2px solid #000;
+     }
+
+     .burger-menu ul li:last-child{
+        border-bottom: 2px solid #000;
+     }
+
+     .burger-menu ul a{
+        display: block;
+        height: 100%;
+        font-size: 3rem;
+        padding: 30px 0;
+        flex-basis: 100%;
+        text-align: center;
+     }
+
+    .wrapper-main{
+        width: calc(100% - 40px);  
+     }
+    
+    .header-main-logo{
+        padding-left: 20px;
+    }
+
+    .header-main-nav{
+        width: fit-content;
+        height: 100%;
+        display: none;
+    }
+    
+    .header-main-sm{
+        padding-right: 20px;
+    }
+    
+    .footer-testimonials{
+    display: none;
+    
+    }
+    
+    .footer-getintouch{
+        margin:  0 0 60px;
+    }
+    
+    
+    .footer-sitemap{
+        flex-wrap: wrap;
+    }
+    
+    
+    .footer-sitemap ul:nth-child(1){
+        border-left: none;
+        padding-left: 0;
+    }
+    
+    .footer-sitemap ul:nth-child(1), 
+    .footer-sitemap ul:nth-child(2),
+    .footer-sitemap ul:nth-child(3){
+        flex-basis: 100%;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+    
+    .footer-sitemap p{
+        padding: 0 20px;
+    }
+    
+    .footer-sitemap ul:nth-child(4) {
+        text-align: center;
+    }
+
+    }
+
+
+
+/*to get fonts go to fonts.google.com
+dafont.com
+if using cdn links,load it before your css file
+you can use cdn links to use fonts  on your page or
+you can download the fonts and use directly on your page
+cdn loads faster but if the link breaks..it could affect your site
+and if using cdn you need to have internet to see it as you work
+for download..have afolder called fonts
+then in your css just after the body style, have fonts style..
+give it a name of your own
+then src url..connec to the folder with fonts
+then go to fonts family css and change the name to what you called it
+..hero section is what the user sees tje first time they get to your website
+more like a banner at the top of the website
+..variable will only work for a particular div and those nested in it
+..to overcome it create a class root and have your variable there so you can access it from anywhere in yout css
+.. keep the crap rule in mind wen designing..contrast,repeatition, alignment
+and proximity..this is a design rule that must be followed strictly
+..it simply means that you need to keep things the same.*/

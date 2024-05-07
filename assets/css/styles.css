@@ -1,0 +1,603 @@
+/* This is body styling */
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #1d1d1d;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.6em;
+    cursor: pointer;
+}
+
+/* This variable declared for colors */
+
+:root{
+  --site-color-01: #c13584;
+  --site-color-01-hover: #700240;
+  /* two dashes is used to refere 
+  to custom property or variable in css is used to declare a variable in css*/
+}
+
+
+/* Html font */
+
+html{
+  font-size: 62.5%;
+}
+
+/* H1 font and styling */
+
+h1{
+  font-size: 2.6rem;
+  line-height: 1.5; /*for line height dont use pixel because it is a fixed amount
+  ..use a unitless amount
+  if using between 24px and 32px then 1.5..
+  this gives a one and half line height*/
+  color: #fff;
+  font-family: Roboto;
+  font-weight: 600;
+  text-transform: uppercase; 
+}
+
+/* H2 font and line height */
+h2{
+  font-size: 2.8rem;
+  line-height: 1.5;
+  color: #fff;
+  font-family: Roboto;
+  font-weight: 600;
+  text-transform: uppercase; 
+}
+
+/* H3 font size and styling */
+h3 h4 h5{
+  font-size: 2.6rem;
+  line-height: 1.5;
+  color: #fff;
+  font-family: Roboto;
+  font-weight: 600;
+  text-transform: uppercase; 
+}
+
+/* p tag styling */
+p{
+  font-size: 1.4rem;
+  line-height: 1.75;
+  color: #fff;
+  font-family: Roboto; 
+}
+
+
+/* a tag styling */
+a{
+  font-size: 1.4rem;
+  line-height: 1.75;
+  color: #fff;
+  font-family: Roboto; 
+  cursor: pointer;
+}
+
+
+
+/* Nav logo styling */
+.logo{
+    width: 100;
+    height :60px;
+    margin: 15px 5px 15px;
+    border-radius: 30px;        
+}
+
+.nav-logo{
+    display: flex;
+}
+
+.nav-logo p{
+    color: #fff;
+}
+
+
+/* Nav logo span */
+.span-p{
+    color: red;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+
+/* This is navbar styling */
+.navbar{
+  /* position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; */
+    padding: 0 20px;
+    background-color: #1d1d1d;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    font-family: Roboto;
+    src: url(../fonts/Roboto-Bold.ttf);
+}
+
+
+.nav-links a{
+    text-decoration: none;
+    color: #fff;
+    display: block;
+}
+
+.nav-links a:hover{ 
+    color: #ffcc00;
+    transform: rotate(6deg);
+}
+
+.nav-links ul{
+    display: flex;
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+/* This is hero video styling */
+#about-video-background {
+    position: fixed;
+    margin-top: 20px;
+    background-color: #1a253a;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 75%;
+    overflow: hidden;
+    z-index: -1;
+  }
+
+  #about-video-background video {
+    min-width: 100%;
+    min-height: 80%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+  }
+  
+  /* This is overlay on about video */
+  .about-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 75%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
+
+
+  /* This is about content */
+  .about-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 80px;
+    margin-bottom: 100px;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    z-index: 2;
+  }
+
+  .about-content h1 {
+    position: relative;
+    font-size: 3em;
+    margin-bottom: 20px;
+  }
+
+
+  .about-content span{
+    color:#c13584;
+  }
+
+    
+    main a {
+        background-color: var(--site-color-01);
+        width: fit-content;
+        text-decoration: none;
+        }
+        main a:hover {
+            background-color: var(--site-color-01-hover);
+            
+            }
+
+
+  .about-image{
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    border: 3px solid #c13584;
+    margin-right: 50px;
+  }
+
+  .about-text{
+    border-left: 5px solid  #700240;
+    padding-left: 20px;
+    margin-left: 50px;
+  }
+
+  .about-text a{
+    background-color: #c13584;
+    border: 2px solid;
+  }
+
+
+/*category section*/
+
+#category{
+  width: 100%;
+  padding: 60px 0;
+  margin-top: 800px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  column-gap: 20px;
+  flex-wrap: wrap;
+
+}
+
+.category p{
+  color: #111;
+  text-align: center;
+  padding-bottom: 40px;
+  flex-basis: 100%;
+  text-transform: uppercase;
+  font-size: 2.2rem;
+}
+
+.category-box{
+  width: 20rem;
+  height: 20rem;
+  background-color:  #111;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.category-box:nth-child(2){
+  background-image: url(https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y29kZXxlbnwwfHwwfHx8MA%3D%3D../img/category/stack.jpg);
+}
+
+.category-box:nth-child(3){
+  background-image: url(https://media.istockphoto.com/id/1462521763/photo/love-handwriting-on-film-slate-storytelling-inspiration-screenwriting-and-filmmaking-for-love.webp?b=1&s=170667a&w=0&k=20&c=q-BDmP7wtlgu9wNgU5In3ru4mtOs7lti2VFS4FV3Nkw=);
+}
+
+.category-box:nth-child(4){
+  background-image: url(https://media.istockphoto.com/id/506610728/photo/blog-weblog-media-digital-dictionary-online-concept.jpg?s=612x612&w=0&k=20&c=GP3JskFcO2kjHbPjixbm_zHJS4bb71xVcAicSqlGo94=);
+}
+
+
+.category-box:nth-child(5){
+  background-image: url(https://images.unsplash.com/photo-1621763540919-1a0477861102?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Y29udGVudCUyMHByb2R1Y3Rpb258ZW58MHx8MHx8fDA%3D);
+}
+
+
+.dark-overlay{
+  position: absolute;
+  top: 0; 
+  right: 0;
+  bottom: 0;
+  left: 0; 
+  background-color: #1a253a;
+  opacity: 0.5;
+  transition: all ease-in-out 200ms;
+}
+
+.category-box:hover .dark-overlay{
+      opacity: 0;
+}
+
+.category-box h2{
+  font-size: 2.2rem;
+  line-height: 1.5;
+  text-align: center;
+  text-shadow: -2px 2px 4px #000;
+  z-index: 100;
+}
+
+
+ /*SKILLS SECTION*/
+
+#skills{
+  width: 100%;
+  padding: 60px 0;
+  background-color: #1a253a;
+}
+
+.skills1{
+  width: 100%;
+  padding: 60px 0;
+  /* background-color: #1a253a; */
+}  
+
+.skills2{
+  width: 100%;
+  padding: 60px 0;
+  /* background-color: #1a253a; */
+  margin-right: 50px;
+} 
+
+.skills-flex{
+  display: flex; 
+  justify-content: space-evenly;
+  align-items: center;
+  column-gap: 30px;
+  margin-top: 900px;
+  margin-bottom: 400px;
+}
+
+ion-icon{
+  height: 70px;
+  width: 45px;
+  background-color: #fff;
+  border-radius: 40px;
+}
+
+
+.skills-text{
+  flex-basis: 455px;
+  margin-left: 50px;
+}
+
+.skills-text a{
+  font-size: 1.8rem;
+  display: block;
+  height: 36px;
+  line-height: 36px;
+  background-color: var(--site-color-01);
+  padding: 0 20px;
+  width: fit-content;
+}
+
+
+.skills-text a:hover {
+  background-color: var(--site-color-01-hover);
+  
+  }
+
+
+.skills{
+      flex-basis: 350px;
+  }
+
+
+  .skill-bar{
+      width: 100%;
+      height: 20px;
+      border: 4px solid #0b0f16;
+  }
+
+  .skill-fill{
+      height: 100%;
+     background-color:  var(--site-color-01);
+  }
+
+  .htmlcss{
+     width: 95%; 
+  }
+
+  .jv{
+      width: 80%; 
+   }
+
+   .node.js{
+      width: 70%; 
+   }
+
+   .react{
+      width: 75%; 
+   }
+
+   .tailwind{
+      width: 98%; 
+   }
+
+   .bootstrap{
+      width: 95%; 
+   }
+
+   .mysql{
+    width: 90%; 
+ }
+
+ .nosql{
+  width: 80%; 
+}
+
+
+/* PROJECT SECTION */
+
+#project{
+  width: 100%;
+  padding: 60px 0;
+  margin-top: 800px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  column-gap: 20px;
+  flex-wrap: wrap;
+
+}
+
+.project p{
+  color: #111;
+  text-align: center;
+  padding-bottom: 40px;
+  flex-basis: 100%;
+  text-transform: uppercase;
+  font-size: 2.2rem;
+}
+
+.project-box{
+  width: 20rem;
+  height: 20rem;
+  background-color:  #111;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.project-box:nth-child(2){
+  background-image: url(https://plus.unsplash.com/premium_photo-1663839412063-fd24ec7d2e10?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fGJpcnRoZGF5JTIwY2FrZXxlbnwwfHwwfHx8MA%3D%3D);
+}
+
+.project-box:nth-child(3){
+  background-image: url(https://images.unsplash.com/photo-1601034913836-a1f43e143611?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGFwcHxlbnwwfHwwfHx8MA%3D%3D);
+}
+
+.project-box:nth-child(4){
+  background-image: url(https://media.istockphoto.com/id/1409722748/photo/students-raising-hands-while-teacher-asking-them-questions-in-classroom.webp?b=1&s=170667a&w=0&k=20&c=wmjzzESyHcSDFXYI1qzngse-EIj7aBMfebEaqjT8cjM=);
+}
+
+
+.project-box:nth-child(5){
+  background-image: url(https://images.unsplash.com/photo-1601034913836-a1f43e143611?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGFwcHxlbnwwfHwwfHx8MA%3D%3D);
+}
+
+
+.dark-overlay{
+  position: absolute;
+  top: 0; 
+  right: 0;
+  bottom: 0;
+  left: 0; 
+  background-color: #1a253a;
+  opacity: 0.5;
+  transition: all ease-in-out 200ms;
+}
+
+.project-box:hover .dark-overlay{
+      opacity: 0;
+}
+
+.project-box a{
+  font-size: 2.2rem;
+  line-height: 1.5;
+  text-align: center;
+  text-shadow: -2px 2px 4px #000;
+  z-index: 100;
+  color: #700240;
+}
+
+
+
+ /* Download Resume */
+.resume{
+  position: fixed;
+  bottom: 200px;
+  border-radius: 25px;
+  color: #700240;
+  background-color: aqua;
+}
+
+
+ /* This is connect with me section */
+ 
+  .connect{
+    position: fixed;
+    top:100px;
+    border-radius: 25px;
+    margin-left: 5px;  
+  }
+
+
+  .connect ion-icon{
+    background-color: aqua;
+  }
+
+
+/* Message me form styling */
+
+#message{
+  margin: 50px;
+  padding: 50px;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+
+.message-me{
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-left: 300px;
+  margin-right: 0px;
+}
+
+.message-me .form-group{
+  padding-bottom: 15px;
+  justify-content: center;
+  align-items: center;
+}
+
+.message-me label{
+  display: block;
+}
+
+.message-me input [type="text"] .message-me textarea{
+  padding: 8px;
+  width: 100%;
+}
+
+
+/* This is footer section */
+ .footer{
+  display: flex;
+  background-color: #1d1d1d;
+  justify-content: center;
+}
+
+
+@media(max-width:600px){
+  #about{
+      width: 100%;
+      float: none;
+  }
+  #skills{
+      width: 100%;
+      float: none;
+  }
+  #project{
+    width: 100%;
+    float: none;
+}
+#resume{
+    width: 100%;
+    float: none;
+}
+
+#connect{
+  width: 100%;
+  float: none;
+}
+#message{
+  width: 100%;
+  float: none;
+}
+
+}
