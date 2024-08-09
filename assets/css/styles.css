@@ -1,15 +1,20 @@
 /* This is body styling */
 
-body{
+*{
+  box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: #1d1d1d;
+}
+
+body{
+    font-family: Roboto;
+    src: url(/assets/fonts/Roboto-Regular.ttf);
+     background-color: #1d1d1d;
     font-size: 16px;
     font-weight: normal;
     line-height: 1.6em;
     cursor: pointer;
 }
-
 /* This variable declared for colors */
 
 :root{
@@ -39,6 +44,7 @@ h1{
   font-weight: 600;
   text-transform: uppercase; 
 }
+
 
 /* H2 font and line height */
 h2{
@@ -80,104 +86,110 @@ a{
 
 
 
-/* Nav logo styling */
-.logo{
-    width: 100;
-    height :60px;
-    margin: 15px 5px 15px;
-    border-radius: 30px;        
-}
 
-.nav-logo{
-    display: flex;
-}
-
-.nav-logo p{
-    color: #fff;
-}
-
-
-/* Nav logo span */
-.span-p{
-    color: red;
-    font-size: 30px;
-    font-weight: 800;
-}
 
 
 /* This is navbar styling */
-.navbar{
-  /* position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%; */
-    padding: 0 20px;
-    background-color: #1d1d1d;
-    color: #fff;
+.nav-bar{
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
-    font-family: Roboto;
-    src: url(../fonts/Roboto-Bold.ttf);
-}
-
-
-.nav-links a{
-    text-decoration: none;
+    position: relative;
+    background-color: #1d1d1d;
     color: #fff;
-    display: block;
+    padding: 10px 10px;
 }
 
-.nav-links a:hover{ 
+/* div housing nav logo style */
+
+.logo{
+  display: flex;
+  gap: 5px;
+} 
+
+
+/* Nav logo image styling */
+.logo img{
+  width: 50px;
+  border-radius: 30px;
+  margin-left: 20px;        
+}
+
+/* Nav logo span */
+.span-p{
+  color: red;
+  font-size: 30px;
+  font-weight: 800;
+}
+
+
+
+/* list items styling */
+.menu{
+  display: flex;
+  list-style: none;
+}
+
+
+.menu li{
+  padding-left: 30px;
+}
+
+
+.menu li a{
+  text-decoration: none;
+  color: #fff;
+  display: inline-block;
+  transition: 0.15s ease-in-out;
+  text-align: center;
+  position: relative;
+  text-transform: uppercase;
+}
+
+
+.menu li a::after{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: violet;
+  transition: 0.15s ease-in-out;
+}
+
+
+
+.menu li a:hover::after{ 
+  width: 100%;
     color: #ffcc00;
-    transform: rotate(6deg);
+    /* transform: rotate(6deg); */
 }
 
-.nav-links ul{
-    display: flex;
-    gap: 10px;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
+
 
 
 
 /* This is hero video styling */
-#about-video-background {
-    position: fixed;
-    margin-top: 20px;
-    background-color: #1a253a;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 75%;
-    overflow: hidden;
-    z-index: -1;
+#about-background-image {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-image: url('/assets/images/myself/saria.jpg');
+  background-size: cover;
+  background-position: center;
   }
 
-  #about-video-background video {
-    min-width: 100%;
-    min-height: 80%;
-    width: auto;
-    height: auto;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: -1;
-  }
   
   /* This is overlay on about video */
   .about-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 75%;
-    background: rgba(0, 0, 0, 0.5);
-    z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); 
   }
 
 
@@ -509,12 +521,15 @@ ion-icon{
 .resume{
   position: fixed;
   bottom: 200px;
+  margin-left: 5px;
   border-radius: 25px;
-  color: #700240;
-  background-color: aqua;
+  color: #fff;
+  background-color: #1d1d1d;
 }
 
-
+.resume:hover{
+  color: #ffcc00;
+}
  /* This is connect with me section */
  
   .connect{
@@ -524,9 +539,12 @@ ion-icon{
     margin-left: 5px;  
   }
 
+  .connect:hover{
+    background-color: #ffcc00;
+  }
 
   .connect ion-icon{
-    background-color: aqua;
+    background-color:#1d1d1d;
   }
 
 
